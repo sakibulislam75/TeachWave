@@ -383,6 +383,9 @@ nav ul {
 .host-info ul li img {
     height: 20px;
     width: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 
