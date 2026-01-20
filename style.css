@@ -205,12 +205,76 @@ nav ul {
 }
 
 
+/* why-choose-section */
+
+.w-tech {
+    background-color: rgba(35, 14, 61, 1);
+    padding-top: 120px;
+}
+
+.w-tech h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.w-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 1600px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.card1 {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.card2,
+.card3,
+.card4 {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.w-container h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.w-container p {
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
 /* responsive-area */
 
 @media screen and (max-width:576px) {
     .hmbrgr {
         display: inline;
         padding: 7px;
+        margin-right: 5px;
     }
     nav ul {
         display: none;
@@ -230,5 +294,12 @@ nav ul {
     .podcast-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+    }
+    .w-container>div {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .w-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
