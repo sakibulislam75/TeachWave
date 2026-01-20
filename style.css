@@ -228,6 +228,7 @@ nav ul {
     width: 80%;
     margin: 0 auto;
     gap: 30px;
+    padding-bottom: 120px;
 }
 
 .card1 {
@@ -265,6 +266,66 @@ nav ul {
     color: rgba(255, 255, 255, 1);
     text-align: justify;
     font-size: 1rem;
+}
+
+.features {
+    background-color: rgba(26, 11, 46, 1);
+}
+
+.features h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+}
+
+
+/* features-section */
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 180px;
+}
+
+.video-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    box-sizing: border-box;
+    text-align: left;
+    padding-bottom: 10px;
+    border-radius: 7px;
+}
+
+.video-card h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    height: auto;
+}
+
+.video-card p {
+    color: rgba(255, 255, 255, 1);
+    font-size: rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.video-card>iframe {
+    width: 98%;
+    height: 190px;
+}
+
+.duration {
+    color: rgba(0, 255, 136, 1);
+    padding-left: 10px;
 }
 
 
