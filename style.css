@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+/* shared-styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.title-font {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: white;
+}
+
+
+/* header-related */
+
+
+/* nav-bar */
+
+header {
+    background-color: rgba(26, 11, 46, 1);
+    border-bottom: .3px solid rgb(51, 50, 50);
+}
+
+nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.logo {
+    justify-content: space-between;
+}
+
+.gradient-text {
+    background: linear-gradient( #ff0080, #7928ca);
+    background-clip: text;
+    color: transparent;
+}
+
+.primary-btn button {
+    background: linear-gradient(rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    color: white;
+    font-weight: 500px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+}
+
+.hmbrgr {
+    display: none;
+}
+
+
+/* banner-section */
+
+.banner {
+    background-color: rgba(65, 37, 103, 1);
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-image: contain;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.bnr-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 120px;
+}
+
+.badge {
+    position: absolute;
+    z-index: 50;
+    background-color: rgba(0, 255, 136, 1);
+    border-radius: 10px;
+    padding: 7px;
+    top: 12px;
+    margin-left: 175px;
+}
+
+.bnr-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 12px;
+    padding-bottom: 113px;
+}
+
+.bt1 {
+    background: linear-gradient(rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.bt2 {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    border-radius: 15px;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* podcast-section */
+
+.podcast {
+    background-color: rgba(26, 11, 46, 1);
+    padding-top: 50px;
+    margin-top: 0px;
+}
+
+.podcast-info {
+    text-align: center;
+}
+
+.podcast-info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 16px;
+}
+
+.podcast-info p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+}
+
+.podcast-card h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(0, 255, 136, 1);
+}
+
+.podcast-card p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.podcast-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 120px;
+    padding-top: 60px;
+}
+
+.line {
+    border-top: 1px solid rgb(72, 70, 70);
+    width: 85%;
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+
+/* responsive-area */
+
+@media screen and (max-width:576px) {
+    .hmbrgr {
+        display: inline;
+        padding: 7px;
+    }
+    nav ul {
+        display: none;
+    }
+    .primary-btn {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .banner {
+        background-image: contain;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .podcast-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
