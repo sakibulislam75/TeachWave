@@ -280,6 +280,10 @@ nav ul {
     text-align: center;
 }
 
+.m {
+    background-color: rgba(83, 60, 114, 1);
+}
+
 
 /* features-section */
 
@@ -291,7 +295,7 @@ nav ul {
     width: 80%;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 180px;
+    padding-bottom: 10px;
 }
 
 .video-card {
@@ -326,6 +330,59 @@ nav ul {
 .duration {
     color: rgba(0, 255, 136, 1);
     padding-left: 10px;
+}
+
+
+/* host-section */
+
+.host {
+    display: flex;
+    gap: 50px;
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+}
+
+.host-corner {
+    background-color: rgba(26, 11, 46, 1);
+    padding-bottom: 168px;
+}
+
+.host-corner .mt {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 144px;
+    padding-bottom: 40px;
+}
+
+.host-info {
+    text-align: left;
+}
+
+.host-info p {
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.host-info ul {
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    gap: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.host-info ul li img {
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -365,5 +422,8 @@ nav ul {
     }
     .video {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .host {
+        flex-direction: column;
     }
 }
