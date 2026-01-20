@@ -363,4 +363,7 @@ nav ul {
     .w-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .video {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
