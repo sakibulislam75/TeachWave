@@ -323,7 +323,9 @@ nav ul {
 }
 
 .video-card>iframe {
-    width: 98%;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
     height: 190px;
 }
 
@@ -423,6 +425,10 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+iframe {
+    border: none;
 }
 
 
